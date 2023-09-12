@@ -1,0 +1,77 @@
+@import '../../responsive.scss';
+.contactSection {
+  position: relative;
+  margin: 80px 20px 20px;
+  height: 600px;
+  background-color: rgba(186, 203, 218, 0.771);
+  display: flex;
+  align-items: center;
+
+  .largeText {
+    width: 50%;
+    margin: 40px;
+    text-shadow: 4px 3px 4px #000000;
+    @include md {
+      width: 40%;
+    }
+    @include sm {
+      display: none;
+    }
+  }
+  .borderContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    .border {
+      background-color: rgb(5, 24, 53);
+      height: 100px;
+      @include lg {
+        display: none;
+      }
+    }
+    svg {
+      display: none;
+      @include lg {
+        display: block;
+      }
+    }
+  }
+  .contactContainer {
+    width: 40%;
+    position: absolute;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    right: 5%;
+    @include sm {
+      display: flex;
+      height: 80%;
+      align-items: center;
+      width: 100%;
+      right: 0;
+      padding: 10px;
+    }
+    .smallText {
+      display: none;
+      @include sm {
+        display: block;
+        text-shadow: 4px 3px 4px #000000;
+      }
+    }
+    p {
+      text-shadow: 4px 3px 4px #000000;
+    }
+    .mb-3 {
+      .font4 {
+        text-shadow: 4px 3px 4px #000000;
+      }
+    }
+    button {
+      background-color: rgb(5, 24, 53);
+      padding: 10px;
+      border-radius: 5px;
+    }
+  }
+}

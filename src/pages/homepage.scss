@@ -1,0 +1,24 @@
+@import '../responsive.scss';
+section {
+  margin-top: 60px;
+  padding-top: 60px;
+  @include sm {
+    padding-top: 60px;
+  }
+}
+.homeSection {
+  margin: 30px auto;
+  @include sm {
+    margin: 0 auto 0;
+  }
+}
+.homeSectionSkills {
+  margin-top: 250px;
+  @include sm {
+    margin-top: 0;
+  }
+}
+
+.homeSectionContact {
+  margin-bottom: 160px;
+}
