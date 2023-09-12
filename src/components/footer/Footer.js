@@ -5,13 +5,13 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="icons">
-        <a href="" target="_blank">
+        <a href="https://www.whatsapp.com/" target="_blank">
           <i className="fab fa-whatsapp"></i>
         </a>
-        <a href="www.linkedin.com/in/oscarlyn-ghartey" target="_blank">
+        <a href="https://www.linkedin.com/" target="_blank">
           <i className="fab fa-linkedin"></i>
         </a>
-        <a href="" target="_blank">
+        <a href="https://github.com/" target="_blank">
           <i className="fab fa-github"></i>
         </a>
       </div>
