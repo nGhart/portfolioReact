@@ -1,6 +1,9 @@
 import React from 'react';
 import './skills.scss';
 import js from '../../assets/js.png';
+import react from '../../assets/React-icon.svg.png';
+import sass from '../../assets/sass.webp';
+import python from '../../assets/python.png';
 
 const Skills = () => {
   return (
@@ -9,10 +12,7 @@ const Skills = () => {
       <div className="skillsSection">
         <div className="skillContainer">
           <div className="skillImage">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
-              alt="React icon"
-            />
+            <img src={react} alt="React icon" />
           </div>
           <div className="skillText">
             <h6 className="font3">Lorem Ipsum</h6>
@@ -28,10 +28,7 @@ const Skills = () => {
 
         <div className="skillContainer">
           <div className="skillImage">
-            <img
-              src="https://assets.stickpng.com/images/5848152fcef1014c0b5e4967.png"
-              alt=""
-            />
+            <img src={python} alt="Python icon" />
           </div>
           <div className="skillText">
             <h6 className="font3">Lorem Ipsum</h6>
@@ -63,10 +60,7 @@ const Skills = () => {
 
         <div className="skillContainer">
           <div className="skillImage">
-            <img
-              src="https://cdn.iconscout.com/icon/free/png-128/free-sass-3629037-3030394.png?f=webp"
-              alt="Sass icon"
-            />
+            <img src={sass} alt="Sass icon" />
           </div>
           <div className="skillText">
             <h6 className="font3">Lorem Ipsum</h6>
