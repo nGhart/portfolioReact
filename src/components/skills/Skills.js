@@ -11,7 +11,7 @@ const Skills = () => {
           <div className="skillImage">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
-              alt=""
+              alt="React icon"
             />
           </div>
           <div className="skillText">
@@ -47,7 +47,7 @@ const Skills = () => {
 
         <div className="skillContainer">
           <div className="skillImage">
-            <img src={js} alt="icon" />
+            <img src={js} alt="JS icon" />
           </div>
           <div className="skillText">
             <h6 className="font3">Lorem Ipsum</h6>
@@ -65,7 +65,7 @@ const Skills = () => {
           <div className="skillImage">
             <img
               src="https://cdn.iconscout.com/icon/free/png-128/free-sass-3629037-3030394.png?f=webp"
-              alt=""
+              alt="Sass icon"
             />
           </div>
           <div className="skillText">
