@@ -382,12 +382,6 @@ const Project = () => {
               hoverOverlay={
                 <div className="hover-overlay">
                   <h1 className="font4 bg1">Rabbit Records</h1>
-                  <p
-                    className="font1 fc"
-                    //style={{ color: 'navy' }}
-                  >
-                    Farm management app
-                  </p>
                 </div>
               }
               pausedOverlay={
