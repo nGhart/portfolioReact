@@ -13,6 +13,18 @@ import cocktails from '../../assets/cocktails.mp4';
 import mathAlgo from '../../assets/math.mp4';
 import numberGame from '../../assets/number.mp4';
 import bake from '../../assets/bakery.mp4';
+import safepic from '../../assets/safe.png';
+import safevid from '../../assets/safevid.mp4';
+import namepic from '../../assets/Akan Day Name.png';
+import namevid from '../../assets/Akan Day Name.mp4';
+import plannerpic from '../../assets/planner.png';
+import plannervid from '../../assets/planner.mp4';
+import expensepic from '../../assets/expense.png';
+import expensevid from '../../assets/expense.mp4';
+import recordspic from '../../assets/records.png';
+import recordsvid from '../../assets/records.mp4';
+import periodvid from '../../assets/period1.mp4';
+import periodpic from '../../assets/period1.png';
 
 const Project = () => {
   return (
@@ -31,7 +43,7 @@ const Project = () => {
               hoverOverlay={
                 <div className="hover-overlay">
                   <h3 className="font4 bg1">E-commerce App</h3>
-                  <p className="font1">Simple e-commerce application</p>
+                  {/* <p className="font1">Simple e-commerce application</p> */}
                 </div>
               }
               pausedOverlay={
@@ -54,14 +66,14 @@ const Project = () => {
           </a>
         </div>
         <div className="videoCard">
-          <a href="https://github.com/nGhart/GuessTheNumber" target="_blank">
+          <a href="https://guess-the-number-react.vercel.app/" target="_blank">
             <HoverVideoPlayer
               className="videoPlayer"
               videoSrc={numberGame}
               hoverOverlay={
                 <div className="hover-overlay">
                   <h1 className="font4 bg1">Guess the Number Game</h1>
-                  <p className="font1 fc">Simple guessing game.</p>
+                  {/* <p className="font1 fc">Simple guessing game.</p> */}
                 </div>
               }
               pausedOverlay={
@@ -91,9 +103,9 @@ const Project = () => {
               hoverOverlay={
                 <div className="hover-overlay">
                   <h1 className="bg2 font4">Notes App</h1>
-                  <p className="font1" style={{ color: 'hotpink' }}>
+                  {/* <p className="font1" style={{ color: 'hotpink' }}>
                     React CRUD application
-                  </p>
+                  </p> */}
                 </div>
               }
               pausedOverlay={
@@ -123,7 +135,7 @@ const Project = () => {
               hoverOverlay={
                 <div className="hover-overlay">
                   <h1 className="font4 bg1">30 Seconds Game</h1>
-                  <p className="font1">Two player guessing game</p>
+                  {/* <p className="font1">Two player guessing game</p> */}
                 </div>
               }
               pausedOverlay={
@@ -146,14 +158,14 @@ const Project = () => {
           </a>
         </div>
         <div className="videoCard">
-          <a href="https://math-algorith.vercel.app/fibonacci" target="_blank">
+          <a href="https://math-algorith.vercel.app/" target="_blank">
             <HoverVideoPlayer
               className="videoPlayer"
               videoSrc={mathAlgo}
               hoverOverlay={
                 <div className="hover-overlay">
                   <h1 className="font4 bg1">Math App</h1>
-                  <p className="font1">Basic math functions</p>
+                  {/* <p className="font1">Basic math functions</p> */}
                 </div>
               }
               pausedOverlay={
@@ -179,17 +191,247 @@ const Project = () => {
           <a href="https://final-bakery.vercel.app/" target="_blank">
             <HoverVideoPlayer
               className="videoPlayer"
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+              }}
               videoSrc={bake}
               hoverOverlay={
                 <div className="hover-overlay">
                   <h1 className="font4 bg1">Bakery Site</h1>
-                  <p className="font1">Bakery site with shop components.</p>
+                  {/* <p className="font1">Bakery site with shop components.</p> */}
                 </div>
               }
               pausedOverlay={
                 <img
                   src={bakery}
                   alt="Bakery Site"
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                  }}
+                />
+              }
+              loadingOverlay={
+                <div className="loading-overlay">
+                  <div className="loading-spinner" />
+                </div>
+              }
+            />
+          </a>
+        </div>
+        <div className="videoCard">
+          <a href="https://safe-react-theta.vercel.app/" target="_blank">
+            <HoverVideoPlayer
+              className="videoPlayer"
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+              }}
+              videoSrc={safevid}
+              hoverOverlay={
+                <div className="hover-overlay">
+                  <h1 className="font4 bg1">Crack the Safe</h1>
+                  {/* <p className="font1 fc">Guessing safe combinations</p> */}
+                </div>
+              }
+              pausedOverlay={
+                <img
+                  src={safepic}
+                  alt=""
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                  }}
+                />
+              }
+              loadingOverlay={
+                <div className="loading-overlay">
+                  <div className="loading-spinner" />
+                </div>
+              }
+            />
+          </a>
+        </div>
+        <div className="videoCard">
+          <a href="https://planner-puce.vercel.app/" target="_blank">
+            <HoverVideoPlayer
+              className="videoPlayer"
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+              }}
+              videoSrc={plannervid}
+              hoverOverlay={
+                <div className="hover-overlay">
+                  <h1 className="font4 bg1">Wedding Planner</h1>
+                  {/* <p className="font1 fc" style={{ color: 'navy' }}>
+                    All your wedding planning notes in one app
+                  </p> */}
+                </div>
+              }
+              pausedOverlay={
+                <img
+                  src={plannerpic}
+                  alt=""
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                  }}
+                />
+              }
+              loadingOverlay={
+                <div className="loading-overlay">
+                  <div className="loading-spinner" />
+                </div>
+              }
+            />
+          </a>
+        </div>
+        <div className="videoCard">
+          <a href="https://akan-day-name.vercel.app/" target="_blank">
+            <HoverVideoPlayer
+              className="videoPlayer"
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+              }}
+              videoSrc={namevid}
+              hoverOverlay={
+                <div className="hover-overlay">
+                  <h1 className="font4 bg1">Akan Day Name</h1>
+                  {/* <p className="font1 fc">Generate your Akan name</p> */}
+                </div>
+              }
+              pausedOverlay={
+                <img
+                  src={namepic}
+                  alt=""
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                  }}
+                />
+              }
+              loadingOverlay={
+                <div className="loading-overlay">
+                  <div className="loading-spinner" />
+                </div>
+              }
+            />
+          </a>
+        </div>
+        <div className="videoCard">
+          <a href="https://expense-manager-ashy.vercel.app/" target="_blank">
+            <HoverVideoPlayer
+              className="videoPlayer"
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+              }}
+              videoSrc={expensevid}
+              hoverOverlay={
+                <div className="hover-overlay">
+                  <h1 className="font4 bg1">Expense Tracker</h1>
+                  {/* <p
+                    className="font1 fc"
+                    //style={{ color: 'navy' }}
+                  >
+                    Monitor your income and expenses
+                  </p> */}
+                </div>
+              }
+              pausedOverlay={
+                <img
+                  src={expensepic}
+                  alt=""
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                  }}
+                />
+              }
+              loadingOverlay={
+                <div className="loading-overlay">
+                  <div className="loading-spinner" />
+                </div>
+              }
+            />
+          </a>
+        </div>
+        <div className="videoCard">
+          <a href="https://recordsfrontend.vercel.app/" target="_blank">
+            <HoverVideoPlayer
+              className="videoPlayer"
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+              }}
+              videoSrc={recordsvid}
+              hoverOverlay={
+                <div className="hover-overlay">
+                  <h1 className="font4 bg1">Rabbit Records</h1>
+                  <p
+                    className="font1 fc"
+                    //style={{ color: 'navy' }}
+                  >
+                    Farm management app
+                  </p>
+                </div>
+              }
+              pausedOverlay={
+                <img
+                  src={recordspic}
+                  alt=""
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                  }}
+                />
+              }
+              loadingOverlay={
+                <div className="loading-overlay">
+                  <div className="loading-spinner" />
+                </div>
+              }
+            />
+          </a>
+        </div>
+        <div className="videoCard">
+          <a href="https://period-tracker.vercel.app/" target="_blank">
+            <HoverVideoPlayer
+              className="videoPlayer"
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+              }}
+              videoSrc={periodvid}
+              hoverOverlay={
+                <div className="hover-overlay">
+                  <h1 className="font4 bg1">Period Tracker</h1>
+                  {/* <p
+                    className="font1 fc"
+                    //style={{ color: 'navy' }}
+                  ></p> */}
+                </div>
+              }
+              pausedOverlay={
+                <img
+                  src={periodpic}
+                  alt=""
                   style={{
                     width: '100%',
                     height: '100%',
