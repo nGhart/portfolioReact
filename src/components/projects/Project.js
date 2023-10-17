@@ -370,7 +370,7 @@ const Project = () => {
           </a>
         </div>
         <div className="videoCard">
-          <a href="https://recordsfrontend.vercel.app/" target="_blank">
+          <a href="https://rabbitrecords.vercel.app/" target="_blank">
             <HoverVideoPlayer
               className="videoPlayer"
               style={{
