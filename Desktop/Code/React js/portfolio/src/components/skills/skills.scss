@@ -1,0 +1,59 @@
+@import '../../responsive.scss';
+.skills {
+  margin: 100px 20px 100px;
+  h1 {
+    text-align: center;
+    text-shadow: 4px 3px 4px rgb(58, 81, 108);
+  }
+  .skillsSection {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(180px, auto);
+    margin-bottom: 10px;
+    @include xl {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include lg {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include md {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .skillContainer {
+      display: flex;
+      .skillImage {
+        display: flex;
+        flex: 1;
+        height: 100%;
+        align-items: center;
+        img {
+          width: 80%;
+          object-fit: cover;
+          @include xxl {
+            width: 20%;
+          }
+          @include xl {
+            width: 40%;
+          }
+          @include lg {
+            width: 50%;
+          }
+          @include md {
+            width: 50%;
+          }
+          @include sm {
+            width: 90%;
+          }
+          @include xs {
+            width: 90%;
+          }
+        }
+      }
+      .skillText {
+        flex: 2;
+      }
+    }
+  }
+}
